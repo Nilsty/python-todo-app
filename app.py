@@ -5,6 +5,7 @@ import string
 import random
 import json
 import requests
+import rook
 
 from datetime import datetime
 from random import randint
@@ -146,4 +147,5 @@ def duplicate_todo(todoId):
 
 
 if __name__ == "__main__":
+    rook.start()
     app.run(host='0.0.0.0')
