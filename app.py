@@ -116,7 +116,7 @@ def generate_todo():
     fr = flask.request
     req = fr.get_json()
     json_data = json.loads(response.text)
-    todoStr = json_data['todo']
+    todoStr = json_data['task']
 
     todo = {
         "title": todoStr,
