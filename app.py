@@ -17,7 +17,7 @@ app = flask.Flask(__name__, static_url_path='/static')
 # it's called unsafe because it doesn't use a crypto random generator
 
 
-url = "https://service.eu.apiconnect.ibmcloud.com/gws/apigateway/api/da713fba861ff19ef7cc15e87072dfd6ce556d30c2b0caac7f307ef844741e9a/281a066c-00fc-40a6-b272-0139a590ce7b/rookout"
+url = "http://node.task-generator.rookout-demo.com/"
 
 def unsafeRandId(len):
     return ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(len))
